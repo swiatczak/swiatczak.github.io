@@ -4,7 +4,7 @@
   <title><![CDATA[Janusz Swiatczak's Notes]]></title>
   <link href="http://swiatczak.github.io/atom.xml" rel="self"/>
   <link href="http://swiatczak.github.io/"/>
-  <updated>2014-07-07T00:04:38+09:30</updated>
+  <updated>2014-07-07T01:19:38+09:30</updated>
   <id>http://swiatczak.github.io/</id>
   <author>
     <name><![CDATA[Janusz Swiatczak]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PeopleSoft HCM/CS Integration After Database Split]]></title>
+    <link href="http://swiatczak.github.io/blog/2014/07/07/peoplesoft-hcm-slash-cs-integration-after-database-split/"/>
+    <updated>2014-07-07T00:59:22+09:30</updated>
+    <id>http://swiatczak.github.io/blog/2014/07/07/peoplesoft-hcm-slash-cs-integration-after-database-split</id>
+    <content type="html"><![CDATA[<p>A few weeks ago I have been involved in the PeopleSoft HR/Campus Solutions DB split project.</p>
+
+<p>A few interesting topics/discoveries:</p>
+
+<ol>
+<li>Delivered subscription peoplecode</li>
+<li>Integration Integrity utility (IIU)</li>
+<li>Integrity Network</li>
+</ol>
+
+
+<hr/>
+
+
+<!-- more -->
+
+
+<ol>
+<li><p>Subscription peoplecode (App Package) for handling delivered Sync messages performs some interesting steps. When records contains
+required fields and no value is provided for one of such fields in the message (rowset) &ndash; the row containing that record is deleted.</p>
+
+<p>  This has interesting side-effects. When you include a custom field on the delivered records. Mark it as required, and use delivered
+  message (and logic) to perform synchronisation you may notice that no values get passed/updated if they are part of the customised
+  record.</p>
+
+<p>  This is due to the subscription processing logic, which deletes rows containing records with empty required fields.
+  It may be justifiable, however, the logic should indicate the reason (as a warning in the log?) for such removal of data.</p>
+
+<p>  We first noticed this problem, as some data was not synchronised properly even though it was included in the message. We then discovered
+  that the data was marked as deleted (in the buffer). Which, interestingly, made us believe there was a bug in the delivered code. Finally,
+  we have realised that we had two custom fields (which unfortunately did not follow our naming convention).</p>
+
+<p>  Once, we have cleared the required flag on those fields the data started flowing as expected, and the records were synchronised correctly.</p></li>
+<li><p>Integration Integrity Utility (IIU) &ndash; very handy, quite simple user interface, all in all &ndash; recommended for anyone ho has to report on data
+discrepancies between split environments</p></li>
+<li><p>Integrity Network &ndash; proves to be quite handy when it comes to monitoring of the integration nodes or viewing the messages both for local and remote
+nodes. You can check the status of the queues on the remote PeopleSoft databases, view diagnostic information, ping and more.</p>
+
+<p> There do seem to be quite a number of some interesting tools for Integration Admins in PeopleTools version 8.53, and I hope I will be able to
+ talk about them a bit more in the future. For now, I am busy moving the pages from my previous blog.</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Peoplesoft App Server Quick Trace On/Off]]></title>
