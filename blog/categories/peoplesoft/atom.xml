@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Peoplesoft | Janusz Swiatczak's Notes]]></title>
+  <link href="http://swiatczak.github.io/blog/categories/peoplesoft/atom.xml" rel="self"/>
+  <link href="http://swiatczak.github.io/"/>
+  <updated>2014-07-07T00:04:38+09:30</updated>
+  <id>http://swiatczak.github.io/</id>
+  <author>
+    <name><![CDATA[Janusz Swiatczak]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Peoplesoft App Server Quick Trace On/Off]]></title>
+    <link href="http://swiatczak.github.io/blog/2014/07/06/quick-trace/"/>
+    <updated>2014-07-06T23:40:46+09:30</updated>
+    <id>http://swiatczak.github.io/blog/2014/07/06/quick-trace</id>
+    <content type="html"><![CDATA[<p>When you need to quickly turn tracing on/off on Peoplesoft App Server (Linux) you can use the following method:</p>
+
+<ol>
+<li>copy this file to a folder on App Server (make sure the app server user has access to the file ).</li>
+</ol>
+
+
+<script src="https://gist.github.com/swiatczak/4f57d1c5c6f3c9404090.js"></script>
+
+
+<p>
+1. Modify the script specifying a location of the config file, and the tracing flags for SQL and peoplecode
+   in APPSRVCFG, TRACESQL and TRACEPC respectively.
+1. put the following line in your .bashrc (or another bash script that runs automatially):</p>
+
+<p>   <code>  . ./trace_alias.sh</code></p>
+
+<h1>Usage</h1>
+
+<ul>
+<li><p>To turn the tracing on:</p>
+
+<p>  <code>  traceon</code></p></li>
+<li><p>To see the current tracing settings:</p>
+
+<p>  <code>  tracestat</code></p></li>
+<li><p>To turn the tracing off:</p>
+
+<p>  <code>  traceoff</code></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
