@@ -1,0 +1,156 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'markdown-resume' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'markdown-resume', null ]
+6 verbose cache add name=undefined spec="markdown-resume" args=["markdown-resume",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'markdown-resume',
+7 verbose parsed url   path: 'markdown-resume',
+7 verbose parsed url   href: 'markdown-resume' }
+8 silly lockFile 8dc067fd-markdown-resume markdown-resume
+9 verbose lock markdown-resume /home/homeuser/.npm/8dc067fd-markdown-resume.lock
+10 silly lockFile 8dc067fd-markdown-resume markdown-resume
+11 silly lockFile 8dc067fd-markdown-resume markdown-resume
+12 verbose addNamed [ 'markdown-resume', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile c8514899-markdown-resume markdown-resume@
+15 verbose lock markdown-resume@ /home/homeuser/.npm/c8514899-markdown-resume.lock
+16 silly addNameRange { name: 'markdown-resume', range: '*', hasData: false }
+17 verbose request where is /markdown-resume
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 0ea208465af81fb7
+20 verbose url raw /markdown-resume
+21 verbose url resolving [ 'https://registry.npmjs.org/', './markdown-resume' ]
+22 verbose url resolved https://registry.npmjs.org/markdown-resume
+23 verbose request where is https://registry.npmjs.org/markdown-resume
+24 info trying registry request attempt 1 at 21:36:31
+25 http GET https://registry.npmjs.org/markdown-resume
+26 http 200 https://registry.npmjs.org/markdown-resume
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"4U8H6QIE08EYWQBE0LM5KZDZT"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '18895',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Sun, 12 Jul 2015 12:06:34 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-mel6523-MEL',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1436702793.641303,VS0,VE408',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'markdown-resume', range: '*', hasData: true }
+29 silly addNameRange versions [ 'markdown-resume',
+29 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.0.6', '0.1.0' ] ]
+30 verbose addNamed [ 'markdown-resume', '0.1.0' ]
+31 verbose addNamed [ '0.1.0', '0.1.0' ]
+32 silly lockFile 189f8dd1-markdown-resume-0-1-0 markdown-resume@0.1.0
+33 verbose lock markdown-resume@0.1.0 /home/homeuser/.npm/189f8dd1-markdown-resume-0-1-0.lock
+34 silly lockFile c0c8a883-resume-markdown-resume-0-1-0-tgz https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+35 verbose lock https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz /home/homeuser/.npm/c0c8a883-resume-markdown-resume-0-1-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz',
+36 verbose addRemoteTarball   '3424ec04745acdcb348b1b07eec3496678e71512' ]
+37 info retry fetch attempt 1 at 21:36:32
+38 verbose fetch to= /tmp/npm-6427-5_Qav5v2/registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+39 http GET https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+40 http 200 https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+41 silly lockFile c0c8a883-resume-markdown-resume-0-1-0-tgz https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+42 silly lockFile c0c8a883-resume-markdown-resume-0-1-0-tgz https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz
+43 silly lockFile 189f8dd1-markdown-resume-0-1-0 markdown-resume@0.1.0
+44 silly lockFile 189f8dd1-markdown-resume-0-1-0 markdown-resume@0.1.0
+45 silly lockFile c8514899-markdown-resume markdown-resume@
+46 silly lockFile c8514899-markdown-resume markdown-resume@
+47 silly resolved [ { name: 'markdown-resume',
+47 silly resolved     version: '0.1.0',
+47 silly resolved     description: 'Turn a simple markdown document into a resume in HTML and PDF',
+47 silly resolved     keywords: [ 'markdown', 'html', 'pdf', 'resume' ],
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git://github.com/c0bra/markdown-resume-js.git' },
+47 silly resolved     bugs: { url: 'https://github.com/c0bra/markdown-resume-js/issues' },
+47 silly resolved     main: 'lib/markdown-resume.js',
+47 silly resolved     bin: { md2resume: './bin/md2resume' },
+47 silly resolved     files: [ 'bin', 'lib', 'assets/css', 'assets/templates' ],
+47 silly resolved     preferGlobal: true,
+47 silly resolved     author: { name: 'Brian Hann' },
+47 silly resolved     license: 'BSD',
+47 silly resolved     dependencies:
+47 silly resolved      { commander: '*',
+47 silly resolved        cheerio: '*',
+47 silly resolved        mustache: '*',
+47 silly resolved        marked: '*',
+47 silly resolved        sqwish: '*',
+47 silly resolved        stylus: '*',
+47 silly resolved        temp: '*' },
+47 silly resolved     devDependencies: { 'coffee-script': '*' },
+47 silly resolved     scripts:
+47 silly resolved      { test: 'echo "Error: no test specified" && exit 1',
+47 silly resolved        prepublish: 'cake build' },
+47 silly resolved     readme: 'markdown-resume.js\r\n==================\r\n\r\nTurn a simple markdown document into a resume in HTML and PDF.\r\n\r\nThis module borrows heavily from the PHP script [markdown-resume](https://github.com/there4/markdown-resume).\r\n\r\n## Features\r\n\r\n* PDF generation via wkhtmltopdf\r\n* Responsive design for multiple device viewport sizes\r\n* Simple Markdown formatting\r\n\r\n## Quickstart\r\n\r\nThe generated files will be put in the same directory as your source file.\r\n    \r\n    # For usage on the command line\r\n    npm install -g markdown-resume\r\n\r\n    # Generate HTML file\r\n    md2resume my-resume-file.md\r\n\r\n    # Generate PDF file\r\n    md2resume --pdf my-resume-file.md\r\n\r\n## Use as a node module\r\n\r\n    var md2resume = require(\'markdown-resume\')\r\n\r\n    # Generate HTML\r\n    md2resume.generate(\'my-resume-file.md\', function(err, out) {\r\n        # ... do something with \'out\'\r\n    });\r\n\r\n    # Same as a above\r\n    md2resume.generate(\'my-resume-file.md\', { format: \'html\' }, function(err, out) { ... });\r\n\r\n    # Generate PDF\r\n    md2resume.generate(\'my-resume-file.md\', { format: \'pdf\' }, function(err, pdf) {\r\n        # ... do something with pdf\r\n    });\r\n\r\n## Acknowledgments\r\n\r\nAs above, this library steals pretty much everything from [markdown-resume](https://github.com/there4/markdown-resume).',
+47 silly resolved     readmeFilename: 'README.md',
+47 silly resolved     _id: 'markdown-resume@0.1.0',
+47 silly resolved     dist:
+47 silly resolved      { shasum: '3424ec04745acdcb348b1b07eec3496678e71512',
+47 silly resolved        tarball: 'http://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz' },
+47 silly resolved     _from: 'markdown-resume@',
+47 silly resolved     _npmVersion: '1.2.11',
+47 silly resolved     _npmUser: { name: 'c0bra', email: 'brian.hann@gmail.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _shasum: '3424ec04745acdcb348b1b07eec3496678e71512',
+47 silly resolved     _resolved: 'https://registry.npmjs.org/markdown-resume/-/markdown-resume-0.1.0.tgz' } ]
+48 info install markdown-resume@0.1.0 into /usr/lib
+49 info installOne markdown-resume@0.1.0
+50 verbose lib/node_modules/markdown-resume unbuild
+51 verbose tar unpack /home/homeuser/.npm/markdown-resume/0.1.0/package.tgz
+52 silly lockFile 75a11d33-lib-node-modules-markdown-resume tar:///usr/lib/node_modules/markdown-resume
+53 verbose lock tar:///usr/lib/node_modules/markdown-resume /home/homeuser/.npm/75a11d33-lib-node-modules-markdown-resume.lock
+54 silly lockFile f251cfc2-arkdown-resume-0-1-0-package-tgz tar:///home/homeuser/.npm/markdown-resume/0.1.0/package.tgz
+55 verbose lock tar:///home/homeuser/.npm/markdown-resume/0.1.0/package.tgz /home/homeuser/.npm/f251cfc2-arkdown-resume-0-1-0-package-tgz.lock
+56 silly gunzTarPerm modes [ '755', '644' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/markdown-resume'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/markdown-resume']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/markdown-resume',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/markdown-resume',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.13.0-37-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "markdown-resume"
+61 error cwd /home/homeuser/dev/sources/swiatczak.github.io
+62 error node -v v0.10.37
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/markdown-resume
+65 error fstream_path /usr/lib/node_modules/markdown-resume
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/markdown-resume'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]
